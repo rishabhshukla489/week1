@@ -1,5 +1,12 @@
-let a="rishabh"
-let age =10
-let m=true
-if(m)
-console.log(a+age+m)
+function sum(a,b,fn){
+    fn(a*b)
+
+}
+function pr(data){
+    console.log(data)
+}
+function gre(){
+    console.log(1)
+}
+setInterval(gre,3*1000)
+sum(2,5,pr)
