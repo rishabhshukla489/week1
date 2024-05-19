@@ -1,13 +1,12 @@
 function rf(){
     return new Promise((cb)=>{
-       cb("hi")
+       setTimeout(()=>{cb("hi")},2000)
     })
 }
-console.log(2)
-var a=rf()
-console.log(a)
-a.then((v)=>{
 
+async function r(){
+    let v=await rf()
     console.log(v)
-})
-console.log(a)
+}
+console.log(0)
+r()
